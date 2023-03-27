@@ -1,11 +1,3 @@
-// 在线自定义字体 未解决bug --离线字体在 vuepress-theme-vdoing-blog\docs\.vuepress\public\static
-@font-face {
-  font-family: "HYQingYunTiJ";
-  font-style: normal;
-  // src: url("https://files.catbox.moe/rtu8y2.ttf") format('truetype');
-  // src: url("../public/static/HYQingYunTiJ.ttf") format('truetype');
-}
-
 // 评论区颜色重置
 .gt-container
   .gt-ico-tip
@@ -64,6 +56,17 @@ body .vuepress-plugin-demo-block__wrapper
       border-bottom-color: $accentColor !important;
     svg
       fill: $accentColor !important;
+// 自定义字体
+body, h2 a, .nav-links a, .title, title
+  font-family: "HYQingYunTiJ", "MicroSoft YaHei", -apple-system, "Hiragino Sans GB", BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+// 代码框里的字体
+//code, kbd, .line-number
+//  font-family source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+
+//h2 a, .nav-links a
+//  font-family: "HYQingYunTiJ", "MicroSoft YaHei";
 
 // 全文搜索框
 .suggestions
