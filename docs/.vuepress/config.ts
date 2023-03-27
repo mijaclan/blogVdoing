@@ -4,6 +4,7 @@
 import { resolve } from 'path'
 import { defineConfig4CustomTheme, UserPlugins } from 'vuepress/config'
 import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
+// @ts-ignore
 import dayjs from 'dayjs'
 import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
@@ -284,8 +285,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       {
         choosen: 'gitalk',
         options: {
-          clientID: 'a6e1355287947096b88b',
-          clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
+          clientID: '82943407e574390d3b46',
+          clientSecret: '607ef16a2e2e19cb0dc0020f2aefe6c2481e7cbf',
           repo: 'blog-gitalk-comment', // GitHub 仓库
           owner: 'mijaclan', // GitHub仓库所有者
           admin: ['mijaclan'], // 对仓库有写权限的人
