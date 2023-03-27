@@ -14,6 +14,9 @@ const DOMAIN_NAME = 'xugaoyi.com' // 域名 (不带https)
 const WEB_SITE = `https://${DOMAIN_NAME}` // 网址
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
+  dest: 'build/.vuepress/dist',  // 目录配置在外,纯粹是有代码洁癖和强迫症，并不能规避开发模式下同时构建不报错的问题
+  host: 'localhost', // dev 的域名
+  port: 8899,
   // theme: 'vdoing', // 使用npm主题包
   theme: resolve(__dirname, '../../vdoing'), // 使用本地主题包
 
